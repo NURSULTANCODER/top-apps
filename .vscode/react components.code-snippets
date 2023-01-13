@@ -1,0 +1,45 @@
+{
+	"Typescript default React component": {
+        "scope": "typescriptreact",
+        "prefix": "rfcd",
+        "body": [
+          "import styles from './${TM_FILENAME_BASE}.module.css'",
+          "import ${TM_FILENAME_BASE}Props from './${TM_FILENAME_BASE}.ts'",
+          "",
+          "const ${TM_FILENAME_BASE} = ({ $2 }: ${TM_FILENAME_BASE}Props) => {",
+          "  return (",
+          "    <div>",
+          "     ${3:$TM_FILENAME_BASE}",
+          "    </div>",
+          "  )",
+          "}",
+          "",
+          "export default ${TM_FILENAME_BASE};"
+        ],
+      },
+      "Typescript React component": {
+        "scope": "typescriptreact",
+        "prefix": "rfc",
+        "body": [
+          "import styles from './${TM_FILENAME_BASE}.module.css'",
+          "import ${TM_FILENAME_BASE}Props from './${TM_FILENAME_BASE}.ts'",
+          "",
+          "export const ${TM_FILENAME_BASE} = ({ $2 }: ${TM_FILENAME_BASE}Props) => {",
+          "  return (",
+          "    <div>",
+          "     ${3:$TM_FILENAME_BASE}",
+          "    </div>",
+          "  )",
+          "}",
+        ],
+      },
+      "Typescript React component interface": {
+        "scope": "typescript",
+        "prefix": "rti",
+        "body": [
+          "export interface ${TM_FILENAME_BASE} {",
+          "  $1",
+          "}",
+        ],
+      }
+}
