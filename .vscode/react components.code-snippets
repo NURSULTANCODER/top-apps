@@ -22,7 +22,7 @@
         "prefix": "rfc",
         "body": [
           "import styles from './${TM_FILENAME_BASE}.module.css';",
-          "import ${TM_FILENAME_BASE}Props from './${TM_FILENAME_BASE}Props';",
+          "import { ${TM_FILENAME_BASE}Props } from './${TM_FILENAME_BASE}Props';",
           "",
           "export const ${TM_FILENAME_BASE} = ({ $2 }: ${TM_FILENAME_BASE}Props): JSX.Element => {",
           "  return (",
